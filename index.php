@@ -1,7 +1,6 @@
 <?php 
-require_once 'database.php';
 session_start();
-
+require_once 'database.php';
 if(!isset($_SESSION['USER_CONNECTED']) || $_SESSION['USER_CONNECTED'] !== true){
     header('Location:login.php');
 }
